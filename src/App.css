@@ -1,0 +1,91 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+  font-size: 150px;
+  margin-top: 200px;
+}
+
+.kolba {
+  width: 12px;
+  height: 72px;
+  border: 5px solid black;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: relative;
+  top: 272px;
+  left: 5px;
+  background: linear-gradient(to top, yellow 70%, white 0%); 
+}
+
+.hr {
+  width: 30px;
+  height: 5px;
+  background-color: black;
+  position: relative;
+  top: 276px;
+  left: .7px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-image: url('../public/Colba_colorful.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+}
+
+.cork {
+  border-top: 18px solid black;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  height: 0;
+  width: 10px;
+  position: relative;
+  top: 250px;
+  left: 438px;
+}
