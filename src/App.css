@@ -41,7 +41,6 @@
   font-family: 'Roboto Slab', serif;
   font-weight: 500;
   font-size: 150px;
-  margin-top: 200px;
 }
 
 .kolba {
@@ -51,7 +50,7 @@
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   position: relative;
-  top: 272px;
+  top: 172px;
   left: 5px;
   background: linear-gradient(to top, yellow 70%, white 0%); 
 }
@@ -61,17 +60,24 @@
   height: 5px;
   background-color: black;
   position: relative;
-  top: 276px;
+  top: 176px;
   left: .7px;
 }
 
 .container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   background-image: url('../public/Colba_colorful.jpg');
   background-position: center;
   background-size: cover;
   min-height: 100vh;
+}
+
+.subcontainer {
+  display: flex;
+  justify-content: center;
 }
 
 .image {
@@ -86,6 +92,14 @@
   height: 0;
   width: 10px;
   position: relative;
-  top: 250px;
+  top: 150px;
   left: 438px;
+}
+
+.subtext {
+ position: relative;
+ bottom: 120px;
+ font-weight: 700;
+ font-size: 60px;
+ color: gray;
 }
