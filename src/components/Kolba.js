@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Kolba = () => {
   return <div>
     <div className="hr"></div>

@@ -69,7 +69,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('../public/Colba_colorful.jpg');
+  background-image: url('/Colba_colorful.jpg');
   background-position: center;
   background-size: cover;
   min-height: 100vh;
