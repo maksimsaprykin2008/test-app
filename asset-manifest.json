@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/test-app/static/css/main.8bfb1c64.chunk.css",
+    "main.js": "/test-app/static/js/main.dacad0ff.chunk.js",
+    "main.js.map": "/test-app/static/js/main.dacad0ff.chunk.js.map",
+    "runtime~main.js": "/test-app/static/js/runtime~main.e9c19458.js",
+    "runtime~main.js.map": "/test-app/static/js/runtime~main.e9c19458.js.map",
+    "static/css/2.2ce0d9b2.chunk.css": "/test-app/static/css/2.2ce0d9b2.chunk.css",
+    "static/js/2.c9abe156.chunk.js": "/test-app/static/js/2.c9abe156.chunk.js",
+    "static/js/2.c9abe156.chunk.js.map": "/test-app/static/js/2.c9abe156.chunk.js.map",
+    "static/js/3.9e436de9.chunk.js": "/test-app/static/js/3.9e436de9.chunk.js",
+    "static/js/3.9e436de9.chunk.js.map": "/test-app/static/js/3.9e436de9.chunk.js.map",
+    "index.html": "/test-app/index.html",
+    "precache-manifest.ce16e529ff80831cad6b3f8852bdc533.js": "/test-app/precache-manifest.ce16e529ff80831cad6b3f8852bdc533.js",
+    "service-worker.js": "/test-app/service-worker.js",
+    "static/css/2.2ce0d9b2.chunk.css.map": "/test-app/static/css/2.2ce0d9b2.chunk.css.map",
+    "static/css/main.8bfb1c64.chunk.css.map": "/test-app/static/css/main.8bfb1c64.chunk.css.map"
+  }
+}
