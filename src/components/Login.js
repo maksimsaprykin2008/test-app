@@ -7,19 +7,22 @@ const Login = props => {
   const { username, password } = form;
   const [displayAlert, setDisplayAlert] = useState(false);
 
-  const handleLocalClick = () => {
+  const handleLocalClick = e => {
+    e.preventDefault();
     validateUser(form);
+  }
+
+  const handleLocalChange = () => {
+    setDisplayAlert(false);
   }
 
   const validateUser = data => {
     validUsers.map(user => {
-      if(data.username === user.username && data.password === user.password) {
+      if(data.username !== user.username || data.password !== user.password) {
         setDisplayAlert(true);
       }
     })
   }
-
-  console.log("ALERT: ", form, displayAlert)
 
   return (
     <div className="login-form">
@@ -30,7 +33,7 @@ const Login = props => {
         value={username} 
         type="text" 
         placeholder="Username" 
-        onChange={handleChange} 
+        onChange={e => {handleChange(e); handleLocalChange(e)}}
       />
       <div style={{height: "20px"}}></div>
       <input 
@@ -38,10 +41,10 @@ const Login = props => {
         value={password} 
         type="password" 
         placeholder="Password" 
-        onChange={handleChange} 
+        onChange={e => {handleChange(e); handleLocalChange(e)}} 
       />
       <div style={{height: "60px"}}></div>
-      <button type="submit" onClick={() => {handleLoginClick(); handleLocalClick()}}>Submit</button>
+      <button type="submit" onClick={e => {handleLoginClick(e); handleLocalClick(e)}}>Submit</button>
       {displayAlert && <div className="alert">Wrong credentials, please try again!</div>}
     </div>
   )

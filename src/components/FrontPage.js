@@ -28,10 +28,10 @@ const FrontPage = () => {
     triggerLoginTimeout();
   }, [])
 
-  const handleLoginClick = () => {
+  const handleLoginClick = (e) => {
+    e.preventDefault();
     validateUser(form);
     setForm(emptyForm);
-    console.log('LOGIN CLICKED: ', form)
   }
 
   const handleChange = e => {
