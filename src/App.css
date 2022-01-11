@@ -126,7 +126,7 @@ input[type=password] {
   border-radius: 5px;
 }
 
-button {
+.button {
   height: 30px;
   width: 100px;
   border-radius: 5px;
@@ -135,11 +135,11 @@ button {
   font-weight: 500;
 }
 
-button:hover {
+.button:hover {
   background-color: plum;
 }
 
-.lead-board {
+.leaderboard {
   display: flex;
   flex-direction: column;
   justify-content: center;

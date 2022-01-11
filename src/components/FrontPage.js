@@ -1,6 +1,6 @@
 import Kolba from './Kolba';
 import Login from './Login';
-import LeadBoard from './Leadboard';
+import LeaderBoard from './Leaderboard';
 import 'animate.css';
 import React, { useState, useEffect } from 'react';
 import { validUsers } from './Users';
@@ -48,7 +48,8 @@ const FrontPage = () => {
 
   return (
   <div className="container">
-    {valid && <LeadBoard />}
+    {valid && <LeaderBoard />}
+    {/* <LeaderBoard /> */}
     {displayLogin ? <div className="animate__animated animate__fadeInUp">
       {!valid && <Login handleLoginClick={handleLoginClick} handleChange={handleChange} form={form} valid={valid} />}
       </div> : <div>
