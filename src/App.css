@@ -142,7 +142,7 @@ input[type=password] {
 .leaderboard {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   height: 400px;
   width: 700px;
@@ -155,4 +155,45 @@ input[type=password] {
 .alert {
   margin-top: 25px;
   color: red;
+}
+
+.image-container {
+  height: 60px;
+  width: 60px;
+  position: relative;
+  top: 5px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.leaderboard-header {
+  display: flex;
+  margin-top: 5px;
+}
+
+.player {
+  display: flex;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.player-image {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  bottom: 5px;
+}
+
+.player-image img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.player-table {
+  position: relative;
+  right: 10px;
+  top: 20px;
 }

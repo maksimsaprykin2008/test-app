@@ -1,11 +1,16 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PlayerTable from './PlayerTable';  
+import trophy from './trophy.png';
 
 const LeaderBoard = () => {
   return (
     <div className="leaderboard">
-      Leaderboard
-      <FontAwesomeIcon icon="fa-solid fa-trophy" />
+      <div className='leaderboard-header'>
+        <h1>Leaderboard&nbsp;&nbsp;</h1>
+        <div className="image-container"><img src={trophy} /></div>
+      </div>
+      <div className='player-table'><PlayerTable /></div>
+      
     </div>
   )
 }

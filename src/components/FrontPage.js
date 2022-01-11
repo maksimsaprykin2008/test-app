@@ -48,7 +48,7 @@ const FrontPage = () => {
 
   return (
   <div className="container">
-    {valid && <LeaderBoard />}
+    {valid && <div className="animate__animated animate__fadeInDown"><LeaderBoard /></div>}
     {/* <LeaderBoard /> */}
     {displayLogin ? <div className="animate__animated animate__fadeInUp">
       {!valid && <Login handleLoginClick={handleLoginClick} handleChange={handleChange} form={form} valid={valid} />}
