@@ -4,6 +4,8 @@ import LeaderBoard from './Leaderboard';
 import 'animate.css';
 import React, { useState, useEffect } from 'react';
 import { validUsers } from './Users';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 const FrontPage = () => {
 
@@ -52,7 +54,10 @@ const FrontPage = () => {
 
   return (
   <div className="container">
-    <div className='back-click' onClick={handleBackClick}>Back to login</div>
+    <div className='back-click' onClick={handleBackClick}>
+      <FontAwesomeIcon icon={faArrowLeft} />{' '}
+      Back to login
+    </div>
     {valid && <div className="animate__animated animate__fadeInDown"><LeaderBoard /></div>}
     {displayLogin ? <div className="animate__animated animate__fadeInUp">
       {!valid && <Login handleLoginClick={handleLoginClick} handleChange={handleChange} form={form} valid={valid} />}

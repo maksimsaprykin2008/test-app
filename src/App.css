@@ -150,6 +150,9 @@ input[type=password] {
   background-color: white;
   border-radius: 5px;
   font-family: 'Roboto Slab', serif;
+  background-image: url('./components/woodenBackground.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 .alert {
@@ -185,6 +188,7 @@ img {
   width: 40px;
   position: relative;
   bottom: 10px;
+  margin-right: 20px;
 }
 
 .player-image img {
@@ -194,7 +198,7 @@ img {
 
 .player-table {
   position: relative;
-  right: 15px;
+  right: 150px;
   top: 20px;
 }
 
@@ -203,4 +207,6 @@ img {
   top: 20px;
   right: 100px;
   cursor: pointer;
+  font-weight: 700;
+  color: rgb(82, 79, 79);
 }
