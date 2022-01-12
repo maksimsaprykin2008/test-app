@@ -5,7 +5,11 @@ import { validPlayers } from "./Players";
 const PlayerTable = () => {
 
   const renderPlayers = 
-    validPlayers.map(player => {return <Player firstName={player.firstName} lastName={player.lastName} />})
+    validPlayers.map(player => {return <Player 
+                                          firstName={player.firstName} 
+                                          lastName={player.lastName} 
+                                          image={player.image} 
+                                        />})
 
   
   console.log(validPlayers)

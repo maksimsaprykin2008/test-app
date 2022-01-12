@@ -46,10 +46,14 @@ const FrontPage = () => {
     })
   }
 
+  const handleBackClick = () => {
+    window.location.reload();
+  }
+
   return (
   <div className="container">
+    <div className='back-click' onClick={handleBackClick}>Back to login</div>
     {valid && <div className="animate__animated animate__fadeInDown"><LeaderBoard /></div>}
-    {/* <LeaderBoard /> */}
     {displayLogin ? <div className="animate__animated animate__fadeInUp">
       {!valid && <Login handleLoginClick={handleLoginClick} handleChange={handleChange} form={form} valid={valid} />}
       </div> : <div>

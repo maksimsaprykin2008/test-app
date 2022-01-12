@@ -181,10 +181,10 @@ img {
 }
 
 .player-image {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   position: relative;
-  bottom: 5px;
+  bottom: 10px;
 }
 
 .player-image img {
@@ -194,6 +194,13 @@ img {
 
 .player-table {
   position: relative;
-  right: 10px;
+  right: 15px;
   top: 20px;
+}
+
+.back-click {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  cursor: pointer;
 }
